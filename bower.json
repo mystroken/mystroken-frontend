@@ -1,0 +1,14 @@
+{
+  "name": "mystroken",
+  "homepage": "https://mystroken.com",
+  "authors": [
+    "Mystro Ken <mystroken@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "normalize-scss": "normalize.scss#^7.0.0",
+    "susy": "^2.2.12"
+  },
+  "overrides": {}
+}

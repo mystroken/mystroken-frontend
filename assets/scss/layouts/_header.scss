@@ -1,0 +1,110 @@
+
+$header: '.site-header';
+$header--height: 96px !default;
+
+#{$header} {
+	display: flex;
+	height: $header--height;
+	line-height: $header--height;
+	width: 100vw;
+	justify-content: space-between;
+
+	padding: 0 gutter();
+	position: relative;
+	z-index: 99;
+
+	@media screen and (min-width: $screen-small-up) {
+		width: $project-slide__text--width;
+	}
+
+	.navigation--opened & .burger svg path {
+		fill: white;
+	}
+}
+
+// Navigation
+$menu: '.menu';
+$menu-social: '.menu-social';
+$navigation: '.site-navigation';
+
+#{$navigation} {
+	display: none;
+	position: relative;
+	z-index: 99;
+
+	@media screen and (min-width: $screen-small-up) {
+		width: $project-slide__text--width;
+	}
+
+	.navigation--opened & {
+		display: block;
+	}
+
+	&__overlay {
+		display: none;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(#000, .93);
+		filter: blur(1px);
+		z-index: 98;
+
+		.navigation--opened & {
+			display: block;
+		}
+	}
+
+	&__inner {
+		padding: 0 gutter();
+		text-align: right;
+	}
+}
+
+#{$menu},
+#{$menu}__item
+#{$menu-social},
+#{$menu-social}__item {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#{$menu} {
+	margin-top: gutter()/2;
+	font-size: 2.5rem;
+	line-height: 140%;
+
+	@media screen and (min-width: $screen-small-up) {
+		font-size: 3rem;
+	}
+
+	&__link {
+		color: #FFF;
+		font-weight: 600;
+	}
+}
+
+#{$menu-social} {
+	height: 24px;
+	margin-top: 1.5 * gutter();
+
+	&__item {
+		display: inline-block;
+
+		&:not(:first-of-type) {
+			margin-left: gutter();
+		}
+	}
+
+	span {
+		display: none;
+	}
+}
+
+
+
+

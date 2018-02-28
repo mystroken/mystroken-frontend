@@ -1,0 +1,73 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 auto;
+  font-family: $typography-fontface-secondary;
+	font-weight: $typography-fontweight-heading;
+  line-height: 120%;
+  color: darken($color-text-primary, 30);
+
+  a { text-decoration: none; }
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 2.7rem;
+}
+
+h3 {
+	font-size: 2rem;
+  line-height: 130%;
+}
+
+h4 {
+	font-size: 1rem;
+  line-height: 140%;
+}
+
+h5 {
+	font-size: .9rem;
+  line-height: 140%;
+}
+
+h6 {
+	font-size: .8rem;
+  line-height: 160%;
+}
+
+@media screen and (min-width: $screen-small-up) {
+	h1 {
+		font-size: $typography-fontsize-h1;
+	}
+
+	h2 {
+		font-size: $typography-fontsize-h2;
+	}
+
+	h3 {
+		font-size: $typography-fontsize-h3;
+		line-height: 130%;
+	}
+
+	h4 {
+		font-size: $typography-fontsize-h4;
+		line-height: 140%;
+	}
+
+	h5 {
+		font-size: $typography-fontsize-h5;
+		line-height: 140%;
+	}
+
+	h6 {
+		font-size: $typography-fontsize-h6;
+		line-height: 160%;
+	}
+}
