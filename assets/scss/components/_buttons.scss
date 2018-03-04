@@ -1,0 +1,8 @@
+$button: '.button' !default;
+
+#{$button} {
+	display: inline-block;
+	padding: .7rem 1.75rem;
+	border: 1px solid #000;
+	text-align: center;
+}
